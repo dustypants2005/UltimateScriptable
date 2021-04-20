@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0643f91b4e4345a44bfea6dbb6ffa7a0, type: 3}
+  m_Name: BlueBullet
+  m_EditorClassIdentifier: 
+  Value: {fileID: 1422425016398114963, guid: d18d08d0f0dbc0046916c596cdfe0ccb, type: 3}

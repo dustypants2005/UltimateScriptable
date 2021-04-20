@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cc93c418236f14f9b22c5621d03b25, type: 3}
+  m_Name: RedWeapon
+  m_EditorClassIdentifier: 
+  DeveloperDescription: Red Player Weapon
+  Reference:
+    UseConstant: 1
+    ConstantValue: {fileID: 1951122779881309904, guid: 75e65b9730d493848a28714c4d2cc3bc,
+      type: 3}
+    Variable: {fileID: 0}
+  ObjectInScene: {fileID: 0}
+  pool: {fileID: 11400000, guid: 79790c408d4b9144592553d5514b02cd, type: 2}
+  ProjectileCount: 5
+  FireRate: 0.1
+  Spread: {x: 0, y: 30, z: 0}

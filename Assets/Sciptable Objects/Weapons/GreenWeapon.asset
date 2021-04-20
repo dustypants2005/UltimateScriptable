@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cc93c418236f14f9b22c5621d03b25, type: 3}
+  m_Name: GreenWeapon
+  m_EditorClassIdentifier: 
+  DeveloperDescription: Green Player Weapon
+  Reference:
+    UseConstant: 1
+    ConstantValue: {fileID: 1951122779881309904, guid: 22bd3128d5516d34883aa2e8f774b7f1,
+      type: 3}
+    Variable: {fileID: 0}
+  ObjectInScene: {fileID: 0}
+  pool: {fileID: 11400000, guid: 9b4897cd117e6ef40ae954ecc1535ce1, type: 2}
+  FireMaxCount: 1
+  ProjectileCount: 1
+  FireRate: 0.1
+  Spread: 30
+  ReloadCooldown: 0
