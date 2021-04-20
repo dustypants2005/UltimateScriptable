@@ -20,8 +20,6 @@ MonoBehaviour:
     Variable: {fileID: 0}
   ObjectInScene: {fileID: 0}
   pool: {fileID: 11400000, guid: 9b4897cd117e6ef40ae954ecc1535ce1, type: 2}
-  FireMaxCount: 1
-  ProjectileCount: 1
+  ProjectileCount: 3
   FireRate: 0.1
-  Spread: 30
-  ReloadCooldown: 0
+  Spread: {x: 0, y: 30, z: 0}

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: PlayerWeaponManager
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  WeaponsList:
-  - {fileID: 11400000, guid: b53fc76f5d49d9044a7618f683341aac, type: 2}
+  WeaponsList: []
   Default: {fileID: 11400000, guid: 52192a69437ed14489e967060972481d, type: 2}
   CurrentWeaponIndex: 0
   WeaponMount:
-    UseConstant: 0
+    UseConstant: 1
     ConstantValue: {fileID: 0}
     Variable: {fileID: 0}
