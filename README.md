@@ -2,6 +2,7 @@
 [Introduction]()
 ## Sources
 - [Unite Austin 2017 - Game Architecture with Scriptable Objects](https://www.youtube.com/watch?v=raQ3iHhE_Kk)
+- [Unite2017 - Github](https://www.youtube.com/watch?v=raQ3iHhE_Kk)
 
 ## Resources
 - [Brackeys](https://www.youtube.com/user/Brackeys)
