@@ -5,8 +5,10 @@ namespace UltimateScriptable {
   public class PlayerController : MonoBehaviour {
     public PlayerManager Manager;
     public GameObject WeaponMount;
+    public GameObjectVariable player;
 
     void OnEnable() {
+      player.SetValue(gameObject);
       Manager.SetController(this);
       Manager.OnEnableEvent?.Invoke();
       Manager.Init(WeaponMount);

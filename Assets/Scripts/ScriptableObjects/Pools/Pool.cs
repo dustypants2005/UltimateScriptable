@@ -8,9 +8,9 @@ namespace UltimateScriptable.Pools {
   [CreateAssetMenu(fileName = "Pool", menuName = "UltimateScriptable/Pool", order = 0)]
   public class Pool : ScriptableObject {
     [Tooltip("We making copies of this.")]
-    public GameObjectReference SpawnerObject;
+    public GameObjectVariable SpawnerObject;
     [Tooltip("Parent for the Spawns")]
-    public GameObjectReference Parent;
+    public GameObjectVariable Parent;
 
     [Tooltip("Store non-active objects to save memory.")]
     public Queue<GameObject> PoolQueue = new Queue<GameObject>();
@@ -57,7 +57,7 @@ namespace UltimateScriptable.Pools {
     public void CreateNew() {
       var obj = Instantiate(SpawnerObject.Value);
       var poolable = obj.GetComponent<Poolable>();
-      if (Parent.Value != null) {
+      if (Parent?.Value != null) {
         obj.transform.parent = Parent.Value.transform;
       }
       if (poolable != null) {
