@@ -17,7 +17,7 @@ public class MoveController : MonoBehaviour {
   }
   CharacterController controller;
   [SerializeField] InputActionReference actionReference;
-  [SerializeField] Vector3 moveDirection = Vector3.zero;
+  Vector3 moveDirection = Vector3.zero;
   void OnEnable() {
     actionReference.action.performed += OnMove;
     actionReference.action.canceled += OnMoveCancel;
