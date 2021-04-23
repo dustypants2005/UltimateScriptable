@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeveloperDescription: Green Player Weapon
   Reference:
-    UseConstant: 1
     ConstantValue: {fileID: 1951122779881309904, guid: 22bd3128d5516d34883aa2e8f774b7f1,
       type: 3}
     Variable: {fileID: 0}
@@ -22,4 +21,4 @@ MonoBehaviour:
   pool: {fileID: 11400000, guid: 9b4897cd117e6ef40ae954ecc1535ce1, type: 2}
   ProjectileCount: 3
   FireRate: 0.1
-  Spread: {x: 0, y: 30, z: 0}
+  Spread: {x: 30, y: 0, z: 0}

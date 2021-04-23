@@ -3959,7 +3959,6 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1025
     player:
-      UseConstant: 0
       ConstantValue: {fileID: 0}
       Variable: {fileID: 11400000, guid: 07b7373324c634343bb09fbcb38e7d1e, type: 2}
 --- !u!4 &2050852580

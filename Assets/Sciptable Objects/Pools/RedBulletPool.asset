@@ -12,15 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47879db62662924789895ac11ec3428, type: 3}
   m_Name: RedBulletPool
   m_EditorClassIdentifier: 
-  SpawnerObject:
-    UseConstant: 0
-    ConstantValue: {fileID: 0}
-    Variable: {fileID: 11400000, guid: 283476900d319ce428a7d6059d15feeb, type: 2}
-  Parent:
-    UseConstant: 1
-    ConstantValue: {fileID: 0}
-    Variable: {fileID: 0}
-  size:
+  SpawnerObject: {fileID: 11400000, guid: 283476900d319ce428a7d6059d15feeb, type: 2}
+  Parent: {fileID: 0}
+  Size:
     UseConstant: 1
     ConstantValue: 5
     Variable: {fileID: 0}

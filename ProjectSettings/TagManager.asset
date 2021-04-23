@@ -20,11 +20,11 @@ TagManager:
   - Ground
   - AccessibleVolume
   - PostProcessing
-  - Projectile
+  - PlayerProjectile
   - MainGround
-  - 
-  - 
-  - 
+  - EnemyProjectile
+  - Player
+  - Enemy
   - 
   - 
   - 
