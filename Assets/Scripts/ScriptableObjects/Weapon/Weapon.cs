@@ -32,12 +32,12 @@ namespace UltimateScriptable.Weapons {
     // public float ReloadCooldown = 0f;
     // TODO: icon
 
-    public void SpawnProjectile(Transform tran) {
-      pool.TakeOutQueue(tran);
+    public GameObject SpawnProjectile(Transform tran) {
+      return pool.TakeOutQueue(tran);
     }
 
-    public void SpawnProjectile(Vector3 position, Quaternion rotation) {
-      pool.TakeOutQueue(position, rotation);
+    public GameObject SpawnProjectile(Vector3 position, Quaternion rotation) {
+      return pool.TakeOutQueue(position, rotation);
     }
   }
 }

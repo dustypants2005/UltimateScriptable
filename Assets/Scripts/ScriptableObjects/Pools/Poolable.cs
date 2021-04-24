@@ -30,6 +30,10 @@ namespace UltimateScriptable.Pools {
       Pool.PutInQueue(gameObject);
     }
 
+    public void Despawn() {
+      Pool.PutInQueue(gameObject);
+    }
+
     public void SetPool(Pool pool) {
       Pool = pool;
     }

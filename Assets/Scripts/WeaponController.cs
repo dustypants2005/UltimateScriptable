@@ -20,7 +20,17 @@ namespace UltimateScriptable {
           spread += weapon.Spread;
         }
         rot = i % 2 == 0 ? -spread : spread;
-        weapon.SpawnProjectile(Mount.position, Mount.rotation * Quaternion.Euler(rot));
+        var projectile = weapon.SpawnProjectile(Mount.position, Mount.rotation * Quaternion.Euler(rot));
+        var rb = projectile.GetComponent<Rigidbody>();
+        var parentCC = GetComponentInParent<CharacterController>();
+        if (rb != null && parentCC != null) { //  player
+          rb.velocity += parentCC.velocity;
+        } else {
+          var parentrb = GetComponentInParent<Rigidbody>();
+          if (parentrb != null && rb != null) { // bot
+            rb.velocity += parentrb.velocity;
+          }
+        }
       }
     }
   }
