@@ -6,16 +6,23 @@ using static UnityEngine.InputSystem.InputAction;
 
 [RequireComponent(typeof(CharacterController))]
 public class MoveController : MonoBehaviour {
+  public Queue<Vector3> MoveQueue = new Queue<Vector3>();
+  public float VerticalVelocity = -1f;
   [SerializeField] float Speed = 1f;
-  public CharacterController Controller {
+  public bool IsGrounded {
     get {
-      if (controller == null) {
-        controller = GetComponent<CharacterController>();
-      }
-      return controller;
+      return Controller.isGrounded;
     }
   }
-  CharacterController controller;
+  public CharacterController Controller {
+    get {
+      if (_controller == null) {
+        _controller = GetComponent<CharacterController>();
+      }
+      return _controller;
+    }
+  }
+  CharacterController _controller;
   [SerializeField] InputActionReference actionReference;
   Vector3 moveDirection = Vector3.zero;
   void OnEnable() {
@@ -28,12 +35,16 @@ public class MoveController : MonoBehaviour {
   }
   void Update() {
     var md = transform.TransformDirection(moveDirection);
+    md.y = VerticalVelocity;
+    for (var i = 0; i < MoveQueue.Count; i++) {
+      md += MoveQueue.Dequeue();
+    }
     Controller.Move(md.normalized * Speed * Time.deltaTime);
   }
 
   void OnMove(CallbackContext context) {
     Vector2 ls = context.ReadValue<Vector2>();
-    moveDirection = new Vector3(ls.x, 0, ls.y);
+    moveDirection = new Vector3(ls.x, VerticalVelocity, ls.y);
   }
 
   void OnMoveCancel(CallbackContext context) {

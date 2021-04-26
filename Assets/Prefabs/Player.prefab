@@ -374,6 +374,7 @@ GameObject:
   - component: {fileID: 961046489}
   - component: {fileID: 171419037}
   - component: {fileID: 171419036}
+  - component: {fileID: 5051850617534649575}
   m_Layer: 18
   m_Name: Player
   m_TagString: Untagged
@@ -511,8 +512,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69dab64a3234564b92d83767606925f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HiGravity: 30
+  LowGravity: 10
   Speed: 12
   actionReference: {fileID: -1633293353401388072, guid: 567ae749caf86dd4b93c0f53f3b7a9c6,
+    type: 3}
+--- !u!114 &5051850617534649575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129948174857747578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9b79375216094408d76f17822f4e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpUpActionReference: {fileID: 6334854124786188767, guid: 567ae749caf86dd4b93c0f53f3b7a9c6,
+    type: 3}
+  JumpDownActionReference: {fileID: -5183223540446930720, guid: 567ae749caf86dd4b93c0f53f3b7a9c6,
     type: 3}
 --- !u!1 &5129948174883035630
 GameObject:

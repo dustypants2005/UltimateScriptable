@@ -3,7 +3,6 @@ using UnityEngine;
 namespace UltimateScriptable {
   public class CameraRaycast : MonoBehaviour {
     [SerializeField] private float camDistance = 15f;
-    [SerializeField] private float adjustmentSpeed = 1f;
     [SerializeField] private GameObject vCam;
     public LayerMask LayerMask;
     private Vector3 defaultCameraPosition = Vector3.zero;
