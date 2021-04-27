@@ -6,6 +6,7 @@ using static UnityEngine.InputSystem.InputAction;
 
 [RequireComponent(typeof(CharacterController))]
 public class MoveController : MonoBehaviour {
+  [SerializeField] InputActionReference actionReference;
   public Queue<Vector3> MoveQueue = new Queue<Vector3>();
   public float VerticalVelocity = -1f;
   [SerializeField] float Speed = 1f;
@@ -23,7 +24,6 @@ public class MoveController : MonoBehaviour {
     }
   }
   CharacterController _controller;
-  [SerializeField] InputActionReference actionReference;
   Vector3 moveDirection = Vector3.zero;
   void OnEnable() {
     actionReference.action.performed += OnMove;

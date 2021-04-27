@@ -8,13 +8,13 @@ using static UnityEngine.InputSystem.InputAction;
 
 [RequireComponent(typeof(MoveController))]
 public class JumpController : MonoBehaviour {
+  [SerializeField] InputActionReference JumpUpActionReference;
+  [SerializeField] InputActionReference JumpDownActionReference;
   [SerializeField] float JumpPower = 10f;
 
   [SerializeField] float Gravity = 1f;
-  float HiGravity = 30f;
-  float LowGravity = 10f;
-  [SerializeField] InputActionReference JumpUpActionReference;
-  [SerializeField] InputActionReference JumpDownActionReference;
+  [SerializeField] float HiGravity = 30f;
+  [SerializeField] float LowGravity = 10f;
   MoveController controller {
     get {
       if (_controller == null) {
@@ -45,15 +45,14 @@ public class JumpController : MonoBehaviour {
 
   void Update() {
     if (Jumped) {
-      Jumped = false;
-      Debug.Log("Jumped");
+      Jumped = false; // pressed Jump this frame
       return;
     }
-    if (IsJumping && controller.Controller.velocity.y <= 0) { // reached peek jump
+    if (IsJumping && controller.Controller.velocity.y < 0) { // reached peek jump
       IsJumping = false;
       Gravity = HiGravity;
     }
-    if (controller.IsGrounded && !IsJumping) {
+    if (controller.IsGrounded) {
       controller.VerticalVelocity = -1;
     } else {
       controller.VerticalVelocity -= Gravity * Time.deltaTime;

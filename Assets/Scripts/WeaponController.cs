@@ -24,7 +24,9 @@ namespace UltimateScriptable {
         var rb = projectile.GetComponent<Rigidbody>();
         var parentCC = GetComponentInParent<CharacterController>();
         if (rb != null && parentCC != null) { //  player
-          rb.velocity += parentCC.velocity;
+          var playerVelocity = parentCC.velocity;
+          playerVelocity.y = 0;
+          rb.velocity += playerVelocity;
         } else {
           var parentrb = GetComponentInParent<Rigidbody>();
           if (parentrb != null && rb != null) { // bot

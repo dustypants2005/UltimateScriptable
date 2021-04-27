@@ -12,7 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e1a81275cd7204f8da8e659cb1014d, type: 3}
   m_Name: JumpDown
   m_EditorClassIdentifier: 
-  InputAction: {fileID: 0}
+  InputAction: {fileID: -5183223540446930720, guid: 567ae749caf86dd4b93c0f53f3b7a9c6,
+    type: 3}
   InputEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b3c2336ffa9994f4ea5f4051ab17d6a5, type: 2}
+        m_TargetAssemblyTypeName: RoboRyanTron.Unite2017.Events.GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
